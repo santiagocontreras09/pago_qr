@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="background:black; color:white; text-align:center;">
+
+<h1>Escanea para pagar</h1>
+
+<img src="qr-yolo.jpeg" width="200">
+
+<br><br>
+
+<button onclick="pago()">Ya pagué</button>
+
+<p id="estado"></p>
+
+<script>
+function pago(){
+  document.getElementById("estado").innerHTML="⏳ Verificando...";
+  setTimeout(()=>{
+    document.getElementById("estado").innerHTML="✅ Pago confirmado";
+  },2000);
+}
+</script>
+
+</body>
+</html>
